@@ -1,4 +1,3 @@
-
 {
   "stationCollection": [
     {
@@ -45,6 +44,19 @@
           "temperature": 0.5,
           "windSpeed": 3.5,
           "pressure": 1004
+        }
+      ]
+    },
+    {
+      "id": "be39c610-0778-11ec-abe6-9ff11aa985c9",
+      "name": "Ardmore",
+      "readings": [
+        {
+          "id": "c1fbd720-0778-11ec-abe6-9ff11aa985c9",
+          "code": "12",
+          "temperature": "12",
+          "windSpeed": "12",
+          "pressure": "12"
         }
       ]
     }
