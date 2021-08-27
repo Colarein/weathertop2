@@ -2,6 +2,7 @@
 
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
+const uuid = require('uuid');
 
 const dashboard = {
   index(request, response) {
@@ -19,7 +20,17 @@ const dashboard = {
     logger.debug(`Deleting Station ${stationId}`);
     stationStore.removeStation(stationId);
     response.redirect('/dashboard');
-  }
+  },
+
+  addStation(request, response) {
+    const newStation = {
+      id: uuid.v1(),
+      name: request.body.name,
+      readings: [],
+    };
+    stationStore.addStation(newStation);
+    response.redirect('/dashboard');
+  },
 };
 
 module.exports = dashboard;

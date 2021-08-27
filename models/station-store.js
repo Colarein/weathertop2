@@ -27,6 +27,9 @@ const stationStore = {
     station.readings.push(reading);
   },
 
+  addStation(station) {
+    this.stationCollection.push(station);
+  },
 };
 
 module.exports = stationStore;

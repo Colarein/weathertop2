@@ -33,6 +33,7 @@ const station = {
       windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
     };
+    logger.debug('New Reading = ', newReading);
     stationStore.addReading(stationId, newReading);
     response.redirect('/station/' + stationId);
   },
