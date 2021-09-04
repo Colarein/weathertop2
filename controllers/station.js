@@ -2,25 +2,16 @@
 
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
+const stationAnalytics = require("../utils/station-analytics");
 const uuid = require('uuid');
 
 const station = {
   index(request, response) {
     const stationId = request.params.id;
     logger.debug("Station id = ", stationId);
-
-    let latestTempC = null;
     const station = stationStore.getStation(stationId)
-    if (station.readings.length > 0) {
-      latestTempC = station.readings[0];
-      for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temperature < latestTempC.temperature) {
-          latestTempC = station.readings[i];
-        }
-      }
-    }
+    const latestTempC = stationAnalytics.getLatestTempC(station);
     console.log(latestTempC);
-
     const viewData = {
       title: "Station",
       station: stationStore.getStation(stationId),
