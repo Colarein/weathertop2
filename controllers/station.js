@@ -8,6 +8,7 @@ const station = {
   index(request, response) {
     const stationId = request.params.id;
     logger.debug("Station id = ", stationId);
+
     let latestTempC = null;
     const station = stationStore.getStation(stationId)
     if (station.readings.length > 0) {
@@ -22,7 +23,8 @@ const station = {
 
     const viewData = {
       title: "Station",
-      station: stationStore.getStation(stationId)
+      station: stationStore.getStation(stationId),
+      latestTempC: latestTempC
     };
     response.render("station", viewData);
   },
