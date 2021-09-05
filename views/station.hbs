@@ -4,7 +4,13 @@
   <h2 class="ui header">
     {{station.name}}
   </h2>
-  <h4> Temperature: {{stationSummary.latestTempC}} C; Temperature: {{stationSummary.latestTempF}} F  </h4>
+  <h4>
+    Code: {{stationSummary.latestCode}};
+    Temperature: {{stationSummary.latestTempC}}C {{stationSummary.latestTempF}}F;
+    Wind Speed: {{stationSummary.latestWindSpeedBeaufort}}Bft;
+    Pressure: {{stationSummary.latestPressure}};
+  </h4>
+
   {{> listreadings}}
   {{> addreading}}
 </section>

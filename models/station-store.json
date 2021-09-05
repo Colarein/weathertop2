@@ -17,6 +17,20 @@
           "temperature": 6,
           "windSpeed": 2,
           "pressure": 1004
+        },
+        {
+          "id": "e3a75bf0-0e63-11ec-895f-0548cc40e112",
+          "code": "",
+          "temperature": "",
+          "windSpeed": "19",
+          "pressure": ""
+        },
+        {
+          "id": "2a573700-0e64-11ec-a787-35e899aa1a16",
+          "code": "12",
+          "temperature": "12",
+          "windSpeed": "12",
+          "pressure": "12"
         }
       ],
       "temperature": "14.50"
