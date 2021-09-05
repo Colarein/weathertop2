@@ -17,13 +17,6 @@
           "temperature": 6,
           "windSpeed": 2,
           "pressure": 1004
-        },
-        {
-          "id": "82610820-0e5c-11ec-948a-e7f5d341c0ec",
-          "code": "12",
-          "temperature": "12",
-          "windSpeed": "12",
-          "pressure": "12"
         }
       ],
       "temperature": "14.50"
