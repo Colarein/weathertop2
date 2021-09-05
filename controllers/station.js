@@ -10,12 +10,17 @@ const station = {
     const stationId = request.params.id;
     logger.debug("Station id = ", stationId);
     const station = stationStore.getStation(stationId)
-    const latestTempC = stationAnalytics.getLatestTempC(station);
-    console.log(latestTempC);
+    // const latestTempC = stationAnalytics.getLatestTempC(station);
+    // console.log(latestTempC);
+    // const latestTempF = stationAnalytics.getLatestTempF(station);
+    // console.log(latestTempF);
     const viewData = {
       title: "Station",
-      station: stationStore.getStation(stationId),
-      latestTempC: latestTempC
+      station: station,
+      stationSummary : {
+        latestTempC: stationAnalytics.getLatestTempC(station),
+        latestTempF: stationAnalytics.getLatestTempF(station)
+      }
     };
     response.render("station", viewData);
   },
