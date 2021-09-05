@@ -1,15 +1,20 @@
 <table class="ui table">
   <thead>
   <tr>
+    <th>Date</th>
     <th>Code</th>
     <th>Temperature</th>
     <th>Wind Speed</th>
+    <th>Wind Direction</th>
     <th>Pressure</th>
   </tr>
   </thead>
   <tbody>
   {{#each station.readings}}
     <tr>
+      <td>
+        {{date}}
+      </td>
       <td>
         {{code}}
       </td>
@@ -18,6 +23,9 @@
       </td>
       <td>
         {{windSpeed}}
+      </td>
+      <td>
+        {{windDirection}}
       </td>
       <td>
         {{pressure}}

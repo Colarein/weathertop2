@@ -24,7 +24,7 @@ const station = {
         latestWindSpeedBeaufort: stationAnalytics.convertToBeafourt(latestReading.windSpeed),
         latestWindCompass: stationAnalytics.windCompass(latestReading.windDirection),
         latestPressure: latestReading.pressure,
-        
+
       }
     };
     response.render("station", viewData);
@@ -48,6 +48,7 @@ const station = {
       windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
       windDirection: request.body.windDirection,
+      date: new Date().toString(),
     };
     logger.debug('New Reading = ', newReading);
     stationStore.addReading(stationId, newReading);
