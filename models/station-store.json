@@ -20,32 +20,6 @@
           "windSpeed": 2,
           "windDirection": 200,
           "pressure": 1004
-        },
-        {
-          "id": "b88059d0-0e73-11ec-9368-67648d6c8dbb",
-          "code": "30",
-          "temperature": "20",
-          "windSpeed": "28",
-          "pressure": "1992",
-          "windDirection": "12"
-        },
-        {
-          "id": "5a499650-0e74-11ec-bee3-3d43a2fa1212",
-          "code": "12",
-          "temperature": "12",
-          "windSpeed": "12",
-          "pressure": "12",
-          "windDirection": "12",
-          "date": 1630865343541
-        },
-        {
-          "id": "aa600f20-0e74-11ec-9eca-cfd5eaf32411",
-          "code": "12",
-          "temperature": "12",
-          "windSpeed": "12",
-          "pressure": "12",
-          "windDirection": "12",
-          "date": "Sun Sep 05 2021 19:11:17 GMT+0100 (Irish Standard Time)"
         }
       ]
     },
