@@ -1,4 +1,25 @@
 "use strict";
+//stationAnalytics already an object so doing this seperately 
+const mappedCodes = {
+  "100": "Clear",
+  "200": "Partial Clouds",
+  "300": "Cloudy",
+  "400": "Light Showers",
+  "500": "Heavy Showers",
+  "600": "Rain",
+  "700": "Snow",
+  "800": "Thunder",
+
+  // weatherCodeIcons.put(100, "sun")
+  // weatherCodeIcons.put(200, "cloud sun")
+  // weatherCodeIcons.put(300, "cloud")
+  // weatherCodeIcons.put(400, "cloud sun rain")
+  // weatherCodeIcons.put(500, "cloud showers heavy")
+  // weatherCodeIcons.put(600, "cloud rain")
+  // weatherCodeIcons.put(700, "snowflake")
+  // weatherCodeIcons.put(800, "bolt")
+
+}
 
 const stationAnalytics = {
   getLatestReading(readings) {
@@ -38,7 +59,57 @@ const stationAnalytics = {
       return 12;
     }
     return -1;
-  }
+  },
+
+    calculateWindChill(temperature, windSpeed) {
+      return Math.round(13.12 + 0.6215 * temperature -  11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * temperature * (Math.pow(windSpeed, 0.16)));
+    },
+
+    windCompass(windDirection) {
+      if (windDirection > 11.25 && windDirection <= 33.75) {
+        return "North North East";
+      } else if (windDirection > 33.75 && windDirection <= 56.25) {
+        return "East North East";
+      } else if (windDirection > 56.25 && windDirection <= 78.75) {
+        return "East";
+      } else if (windDirection > 78.75 && windDirection <= 101.25) {
+        return "East South East";
+      } else if (windDirection > 101.25 && windDirection <= 123.75) {
+        return "East South East";
+      } else if (windDirection > 123.75 && windDirection <= 146.25) {
+        return "South East";
+      } else if (windDirection > 146.25 && windDirection <= 168.75) {
+        return "South South East";
+      } else if (windDirection > 168.75 && windDirection <= 191.25) {
+        return "South";
+      } else if (windDirection > 191.25 && windDirection <= 213.75) {
+        return "South South West";
+      } else if (windDirection > 213.75 && windDirection <= 236.25) {
+        return "South West";
+      } else if (windDirection > 236.25 && windDirection <= 258.75) {
+        return "West South West";
+      } else if (windDirection > 258.75 && windDirection <= 281.25) {
+        return "West";
+      } else if (windDirection > 281.25 && windDirection <= 303.75) {
+        return "West North West";
+      } else if (windDirection > 303.75 && windDirection <= 326.25) {
+        return "North West";
+      } else if (windDirection > 326.25 && windDirection <= 348.75) {
+        return "North North West";
+      } else {
+        return "North";
+      }
+  },
+  
+  
+ weatherIcon(code) {
+  return mappedCodes[String(code)];
+},
+
+// public static String currentWeather(int code) {
+//   return weatherCodes.get(code);
+// }
+
 };
 
 module.exports = stationAnalytics;

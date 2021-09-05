@@ -5,10 +5,12 @@
     {{station.name}}
   </h2>
   <h4>
-    Code: {{stationSummary.latestCode}};
+    Code: {{stationSummary.latestWeatherIcon}};
     Temperature: {{stationSummary.latestTempC}}C {{stationSummary.latestTempF}}F;
-    Wind Speed: {{stationSummary.latestWindSpeedBeaufort}}Bft;
-    Pressure: {{stationSummary.latestPressure}};
+    Wind Speed: {{stationSummary.latestWindSpeedBeaufort}}bft;
+    Feels Like: {{stationSummary.latestWindChill}} C;
+    Direction: {{stationSummary.latestWindCompass}} C;
+    Pressure: {{stationSummary.latestPressure}}hpa;
   </h4>
 
   {{> listreadings}}

@@ -17,11 +17,14 @@ const station = {
       station: station,
       stationSummary : {
         latestCode: latestReading.code,
+        latestWeatherIcon: stationAnalytics.weatherIcon(latestReading.code),
         latestTempC: latestReading.temperature,
         latestTempF: stationAnalytics.celsiusToFahrenheit(latestReading.temperature),
-        latestWindSpeed: latestReading.windSpeed,
+        latestWindChill: stationAnalytics.calculateWindChill(latestReading.temperature, latestReading.windSpeed),
         latestWindSpeedBeaufort: stationAnalytics.convertToBeafourt(latestReading.windSpeed),
+        latestWindCompass: stationAnalytics.windCompass(latestReading.windDirection),
         latestPressure: latestReading.pressure,
+        
       }
     };
     response.render("station", viewData);
@@ -44,6 +47,7 @@ const station = {
       temperature: request.body.temperature,
       windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
+      windDirection: request.body.windDirection,
     };
     logger.debug('New Reading = ', newReading);
     stationStore.addReading(stationId, newReading);

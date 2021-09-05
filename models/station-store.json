@@ -5,35 +5,23 @@
       "name": "Tramore",
       "readings": [
         {
-          "id": "02",
+          "date": "2021-01-19T08:31:00.000Z",
           "code": 800,
           "temperature": 0.5,
           "windSpeed": 3.5,
-          "pressure": 1002
+          "windDirection": 220,
+          "pressure": 1001
         },
         {
           "id": "03",
+          "date": "2021-01-20T09:34:00.000Z",
           "code": 600,
           "temperature": 6,
           "windSpeed": 2,
+          "windDirection": 200,
           "pressure": 1004
-        },
-        {
-          "id": "e3a75bf0-0e63-11ec-895f-0548cc40e112",
-          "code": "",
-          "temperature": "",
-          "windSpeed": "19",
-          "pressure": ""
-        },
-        {
-          "id": "2a573700-0e64-11ec-a787-35e899aa1a16",
-          "code": "12",
-          "temperature": "12",
-          "windSpeed": "12",
-          "pressure": "12"
         }
-      ],
-      "temperature": "14.50"
+      ]
     },
     {
       "id": "05",
@@ -41,9 +29,11 @@
       "readings": [
         {
           "id": "06",
-          "code": 700,
-          "temperature": 8,
-          "windSpeed": 1,
+          "date": "2021-01-19T09:31:00.000Z",
+          "code": 200,
+          "temperature": 0.5,
+          "windSpeed": 3.5,
+          "windDirection": 120,
           "pressure": 999
         },
         {
@@ -51,6 +41,7 @@
           "code": 200,
           "temperature": 0.5,
           "windSpeed": 3.5,
+          "windDirection": 200,
           "pressure": 1004
         }
       ]
@@ -59,13 +50,7 @@
       "id": "be39c610-0778-11ec-abe6-9ff11aa985c9",
       "name": "Ardmore",
       "readings": [
-        {
-          "id": "c1fbd720-0778-11ec-abe6-9ff11aa985c9",
-          "code": "12",
-          "temperature": "12",
-          "windSpeed": "12",
-          "pressure": "12"
-        }
+
       ]
     }
   ]
