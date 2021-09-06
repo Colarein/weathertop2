@@ -7,3 +7,6 @@ This is an Express.js project, designed to work well with the Glitch development
 References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 Add in refs for MathPow 
+
+https://www.youtube.com/watch?v=CUQAt1xfUWI
+images
