@@ -1,7 +1,8 @@
 {
   "stationCollection": [
     {
-      "id": "01",
+      "id": "f07917a0-0f54-11ec-9246-e941db58ccee",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Tramore",
       "readings": [
         {
@@ -24,8 +25,9 @@
       ]
     },
     {
-      "id": "05",
-      "name": "Dunmore",
+      "id": "71ef0790-0f55-11ec-9246-e941db58ccee",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Clonmel",
       "readings": [
         {
           "id": "06",
@@ -45,11 +47,6 @@
           "pressure": 1004
         }
       ]
-    },
-    {
-      "id": "be39c610-0778-11ec-abe6-9ff11aa985c9",
-      "name": "Ardmore",
-      "readings": []
     }
   ]
 }
