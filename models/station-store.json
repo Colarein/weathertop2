@@ -57,6 +57,24 @@
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "name": "Ardmore",
       "readings": []
+    },
+    {
+      "id": "0db64950-0fff-11ec-8b70-d5439d0bbe63",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Montana",
+      "latitude": "123",
+      "longitude": "123",
+      "readings": [
+        {
+          "id": "131df410-0fff-11ec-8b70-d5439d0bbe63",
+          "code": "123",
+          "temperature": "123",
+          "windSpeed": "123",
+          "pressure": "123",
+          "windDirection": "132",
+          "date": "Tue Sep 07 2021 18:14:35 GMT+0100 (Irish Standard Time)"
+        }
+      ]
     }
   ]
 }

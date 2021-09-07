@@ -12,22 +12,30 @@ const station = {
     const station = stationStore.getStation(stationId)
     const latestReading = stationAnalytics.getLatestReading(station.readings);
 
-    const viewData = {
-      title: "Station",
-      station: station,
-      stationSummary : {
-        latestCode: latestReading.code,
-        latestWeatherIcon: stationAnalytics.weatherIcon(latestReading.code),
-        latestTempC: latestReading.temperature,
-        latestTempF: stationAnalytics.celsiusToFahrenheit(latestReading.temperature),
-        latestWindChill: stationAnalytics.calculateWindChill(latestReading.temperature, latestReading.windSpeed),
-        latestWindSpeedBeaufort: stationAnalytics.convertToBeafourt(latestReading.windSpeed),
-        latestWindCompass: stationAnalytics.windCompass(latestReading.windDirection),
-        latestPressure: latestReading.pressure,
+    if (latestReading) {
+      const viewData = {
+        title: "Station",
+        station: station,
+        stationSummary: {
+          latestCode: latestReading.code,
+          latestWeatherIcon: stationAnalytics.weatherIcon(latestReading.code),
+          latestTempC: latestReading.temperature,
+          latestTempF: stationAnalytics.celsiusToFahrenheit(latestReading.temperature),
+          latestWindChill: stationAnalytics.calculateWindChill(latestReading.temperature, latestReading.windSpeed),
+          latestWindSpeedBeaufort: stationAnalytics.convertToBeafourt(latestReading.windSpeed),
+          latestWindCompass: stationAnalytics.windCompass(latestReading.windDirection),
+          latestPressure: latestReading.pressure,
 
-      }
-    };
-    response.render("station", viewData);
+        }
+      };
+      response.render("station", viewData);
+    } else {
+      const viewData = {
+        title: "Station",
+        station: station,
+      };
+      response.render("station", viewData);
+    }
   },
 
   deleteReading(request, response) {

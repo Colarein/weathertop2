@@ -34,6 +34,13 @@
       "email": "marge@simpson.com",
       "password": "secret",
       "id": "6bf57d10-0f55-11ec-9246-e941db58ccee"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "887d7640-1004-11ec-bed7-1561a3587520"
     }
   ]
 }
