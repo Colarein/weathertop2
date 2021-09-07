@@ -21,7 +21,7 @@ const stationStore = {
   },
 
   addStation(station) {
-    this.store.add(this.collection, station);
+    this.store.add(this.collection, station, station.latitude, station.longitude);
     this.store.save();
   },
 

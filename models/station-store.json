@@ -4,6 +4,8 @@
       "id": "f07917a0-0f54-11ec-9246-e941db58ccee",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Tramore",
+      "latitude": "52.1614",
+      "longitude": "7.1493",
       "readings": [
         {
           "date": "2021-01-19T08:31:00.000Z",
@@ -27,26 +29,34 @@
     {
       "id": "71ef0790-0f55-11ec-9246-e941db58ccee",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "name": "Clonmel",
+      "name": "Dunmore",
+      "latitude": "52.1528",
+      "longitude": "6.9948",
       "readings": [
         {
           "id": "06",
           "date": "2021-01-19T09:31:00.000Z",
-          "code": 200,
-          "temperature": 0.5,
-          "windSpeed": 3.5,
-          "windDirection": 120,
-          "pressure": 999
+          "code": "400",
+          "temperature": "0.5",
+          "pressure": "999",
+          "windSpeed": "23",
+          "windDirection": "23"
         },
         {
           "id": "07",
-          "code": 200,
-          "temperature": 0.5,
-          "windSpeed": 3.5,
-          "windDirection": 200,
-          "pressure": 1004
+          "code": "100",
+          "temperature": "0.5",
+          "windSpeed": "3.5",
+          "windDirection": "200",
+          "pressure": "1004"
         }
       ]
+    },
+    {
+      "id": "8278bb10-0faa-11ec-bf57-bbda6c519544",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Ardmore",
+      "readings": []
     }
   ]
 }
