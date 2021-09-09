@@ -8,5 +8,8 @@ References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 Add in refs for MathPow 
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+mathmax
+
 https://www.youtube.com/watch?v=CUQAt1xfUWI
 images

@@ -1,5 +1,6 @@
 "use strict";
 //stationAnalytics already an object so doing this seperately 
+const { max } = require("lodash");
 const mappedCodes = {
   "100": "Clear",
   "200": "Partial Clouds",
@@ -10,14 +11,37 @@ const mappedCodes = {
   "700": "Snow",
   "800": "Thunder",
 
-  // weatherCodeIcons.put(100, "sun")
-  // weatherCodeIcons.put(200, "cloud sun")
-  // weatherCodeIcons.put(300, "cloud")
-  // weatherCodeIcons.put(400, "cloud sun rain")
-  // weatherCodeIcons.put(500, "cloud showers heavy")
-  // weatherCodeIcons.put(600, "cloud rain")
-  // weatherCodeIcons.put(700, "snowflake")
-  // weatherCodeIcons.put(800, "bolt")
+  // weatherIcons(code) {
+  //   let weatherIcons = code;
+  //   switch (code) {
+  //     case "100":
+  //       return  "sun";
+  //       break;
+  //     case "200":
+  //       return "cloud sun";
+  //       break;
+  //     case "300":
+  //       return "cloud";
+  //       break;
+  //     case "400":
+  //       return "cloud sun rain";
+  //       break;
+  //     case "500":
+  //       return "cloud showers heavy";
+  //       break;
+  //     case "600":
+  //       return "cloud rain";
+  //       break;
+  //     case "700":
+  //       return "snowflake";
+  //       break;
+  //     case "800":
+  //       return "bolt";
+  //       break;
+  //     default:
+  //       return "";
+  //   }
+  // },
 
 }
 
@@ -106,8 +130,24 @@ const stationAnalytics = {
   return mappedCodes[String(code)];
 },
 
-// public static String currentWeather(int code) {
-//   return weatherCodes.get(code);
+ // getMax(readings) {
+ //   return max[Math.max(readings)];
+ // },
+
+  // getMaxTemperature(temperature){
+  //   let maxTemperature;
+  //   return maxTemperature[Math.max(temperature)];
+  // },
+
+
+// public static double min(double values[]) {
+//   double min = values[0];
+//   for (double value : values) {
+//     if (value < min) {
+//       min = value;
+//     }
+//   }
+//   return min;
 // }
 
 };
