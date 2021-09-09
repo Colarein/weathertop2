@@ -9,12 +9,8 @@
   </div>
   <button class="ui blue submit button">Add Report</button>
 </form>
-<!--<h4>-->
-<!--  Title: {{station.title}};-->
-
-<!--  Code: {{report.code}};-->
-<!--  Temperature: {{report.temperature}}C;-->
-<!--  Wind Speed: {{report.windSpeed}}bft;-->
-<!--  Direction: {{report.windDirection}};-->
-<!--  Pressure: {{report.pressure}}hpa;-->
-<!--</h4>-->
+<section class="ui segment">
+  {{> reading-header}}
+  {{> reading-table}}
+  {{> reading-row}}
+</section>
