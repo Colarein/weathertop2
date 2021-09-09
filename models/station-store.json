@@ -48,16 +48,7 @@
           "temperature": "0.5",
           "windSpeed": "3.5",
           "windDirection": "200",
-          "pressure": "1004"
-        },
-        {
-          "id": "773e0e20-11ae-11ec-b26b-dd1e8340af2a",
-          "code": "13",
-          "temperature": "13",
-          "windSpeed": "13",
-          "pressure": "13",
-          "windDirection": "13",
-          "date": "Thu Sep 09 2021 21:42:36 GMT+0100 (Irish Standard Time)"
+          "pressure": "1005"
         }
       ]
     },
@@ -76,6 +67,14 @@
           "date": "Thu Sep 09 2021 20:56:18 GMT+0100 (Irish Standard Time)"
         }
       ]
+    },
+    {
+      "id": "98133810-11b2-11ec-99ab-49de9ee76e4a",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Ardmore",
+      "latitude": "12",
+      "longitude": "12",
+      "readings": []
     }
   ]
 }

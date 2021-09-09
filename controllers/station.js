@@ -25,6 +25,7 @@ const station = {
           latestTempC: latestReading.temperature,
           latestTempF: stationAnalytics.celsiusToFahrenheit(latestReading.temperature),
           latestWindChill: stationAnalytics.calculateWindChill(latestReading.temperature, latestReading.windSpeed),
+          latestWindSpeed: latestReading.windSpeed,
           latestWindSpeedBeaufort: stationAnalytics.convertToBeafourt(latestReading.windSpeed),
           latestWindCompass: stationAnalytics.windCompass(latestReading.windDirection),
           latestPressure: latestReading.pressure,

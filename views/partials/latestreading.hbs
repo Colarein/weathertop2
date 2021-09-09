@@ -1,11 +1,56 @@
-<h4>
+<h3 class="ui segment">
+  <section class="ui six yellow cards">
+    <div class="ui card">
+      <div class="ui header">
+        <h4> {{station.name}}
+          <br><br>
+          <i class="big icons">
+            <i class="purple map marker icon"></i></i>
+          <br>
+          Lat : {{station.latitude}} <br>
+          Lng : {{station.longitude}}</h4>
+      </div>
+    </div>
+    <div class="ui card">
+    <h4>Weather <br><br>
+      <i class="big icons">
+        <i class="green cloud sun rain icon"></i></i>
+      <br>
+      {{stationSummary.latestWeatherIcon}}
+    </h4>
+    </div>
+    </div>
+    <div class="ui card">
+      <div class="ui header">
+        <h4> Temp <br><br>
+          <i class="big icons">
+            <i class ="red temperature high icon"></i>
+          </i>
+          <br>
+          {{stationSummary.latestTempC}} C<br>
+          {{stationSummary.latestTempF}} F</h4>
+      </div>
+    </div>
+    <div class="ui card">
+      <h4>Wind <br><br>
+        <i class="big icons">
+          <i class="blue wind icon"></i></i>
+        <br>
+        {{stationSummary.latestWindSpeedBeaufort}}bft <br>
+        {{stationSummary.latestWindSpeed}} kmph<br>
+        {{stationSummary.latestWindCompass}}<br>
+        Feels Like: {{stationSummary.latestWindChill}}C</h4>
+    </div>
+    </div>
+    <div class="ui card">
+      <h4>Pressure <br><br>
+        <i class="big icons">
+          <i class="orange tachometer alternate icon"></i></i>
+        <br>
+        {{stationSummary.latestPressure}} hpa
+      </h4>
+    </div>
+<!--&lt;!&ndash;      &lt;!&ndash;      Max Temp: {{stationSummary.maxTemperature}};&ndash;&gt;&ndash;&gt;-->
+  </div>
+</div>
 
-  Code: {{stationSummary.latestWeatherIcon}};
-  Temperature: {{stationSummary.latestTempC}}C {{stationSummary.latestTempF}}F;
-  <!--      Max Temp: {{stationSummary.maxTemperature}};-->
-  Wind Speed: {{stationSummary.latestWindSpeedBeaufort}}bft;
-  Feels Like: {{stationSummary.latestWindChill}} C;
-  Direction: {{stationSummary.latestWindCompass}};
-  Pressure: {{stationSummary.latestPressure}}hpa;
-
-</h4>
