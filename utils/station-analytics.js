@@ -1,49 +1,17 @@
 "use strict";
 //stationAnalytics already an object so doing this seperately 
 const { max } = require("lodash");
-const mappedCodes = {
-  "100": "Clear",
-  "200": "Partial Clouds",
-  "300": "Cloudy",
-  "400": "Light Showers",
-  "500": "Heavy Showers",
-  "600": "Rain",
-  "700": "Snow",
-  "800": "Thunder",
-
-  // weatherIcons(code) {
-  //   let weatherIcons = code;
-  //   switch (code) {
-  //     case "100":
-  //       return  "sun";
-  //       break;
-  //     case "200":
-  //       return "cloud sun";
-  //       break;
-  //     case "300":
-  //       return "cloud";
-  //       break;
-  //     case "400":
-  //       return "cloud sun rain";
-  //       break;
-  //     case "500":
-  //       return "cloud showers heavy";
-  //       break;
-  //     case "600":
-  //       return "cloud rain";
-  //       break;
-  //     case "700":
-  //       return "snowflake";
-  //       break;
-  //     case "800":
-  //       return "bolt";
-  //       break;
-  //     default:
-  //       return "";
-  //   }
-  // },
-
-}
+const stationStore = require("../models/station-store");
+const { response } = require("express");
+// const mappedCodes = {
+//   "100": "Clear",
+//   "200": "Partial Clouds",
+//   "300": "Cloudy",
+//   "400": "Light Showers",
+//   "500": "Heavy Showers",
+//   "600": "Rain",
+//   "700": "Snow",
+//   "800": "Thunder",
 
 const stationAnalytics = {
   getLatestReading(readings) {
@@ -124,31 +92,60 @@ const stationAnalytics = {
         return "North";
       }
   },
-  
-  
- weatherIcon(code) {
-  return mappedCodes[String(code)];
-},
 
- // getMax(readings) {
+  weatherIcon(code) {
+    let weatherIcon = code;
+    switch (code) {
+      case "100":
+        return  "sun";
+        break;
+      case "200":
+        return "cloud sun";
+        break;
+      case "300":
+        return "cloud";
+        break;
+      case "400":
+        return "cloud sun rain";
+        break;
+      case "500":
+        return "cloud showers heavy";
+        break;
+      case "600":
+        return "cloud rain";
+        break;
+      case "700":
+        return "snowflake";
+        break;
+      case "800":
+        return "bolt";
+        break;
+      default:
+        return "";
+    }
+  },
+
+//   getMinTemperature(temperature) {
+//   let minTemperature = null;
+//   const station = stationStore.getStation(stationId)
+//   if (station.readings.length > 0) {
+//     minTemperature = station.readings[0];
+//     for (let i = 1; i < station.readings.length; i++) {
+//       if (station.readings[i].temperature < minTemperature.temperature) {
+//         minTemperature = station.readings[i];
+//       }
+//     }
+//   }
+// }
+
+//  weatherIcon(code) {
+//   return mappedCodes[String(code)];
+// },
+
+ //   getMax(readings) {
  //   return max[Math.max(readings)];
  // },
 
-  // getMaxTemperature(temperature){
-  //   let maxTemperature;
-  //   return maxTemperature[Math.max(temperature)];
-  // },
-
-
-// public static double min(double values[]) {
-//   double min = values[0];
-//   for (double value : values) {
-//     if (value < min) {
-//       min = value;
-//     }
-//   }
-//   return min;
-// }
 
 };
 

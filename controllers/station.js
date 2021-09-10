@@ -5,6 +5,7 @@ const stationStore = require("../models/station-store");
 const stationAnalytics = require("../utils/station-analytics");
 const uuid = require('uuid');
 const axios = require("axios");
+const { response } = require("express");
 const oneCallRequest = 'https://api.openweathermap.org/data/2.5/onecall?lat=52.160858&lon=-7.152420&units=metric&appid=4945dcfc76e24ac10153c424a842c0d9'
 
 const station = {
@@ -13,7 +14,6 @@ const station = {
     logger.debug("Station id = ", stationId);
     const station = stationStore.getStation(stationId)
     const latestReading = stationAnalytics.getLatestReading(station.readings);
-    // const maxTemperature = stationAnalytics.getMaxTemperature(station.readings);
 
     if (latestReading) {
       const viewData = {
@@ -30,7 +30,7 @@ const station = {
           latestWindCompass: stationAnalytics.windCompass(latestReading.windDirection),
           latestPressure: latestReading.pressure,
 
-         // maxTemperature: stationAnalytics.getMaxTemperature(station.temperature),
+          // minTemperature: stationAnalytics.getMinTemperature(station.temperature),
 
         },
       };

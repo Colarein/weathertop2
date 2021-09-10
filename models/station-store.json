@@ -49,6 +49,15 @@
           "windSpeed": "3.5",
           "windDirection": "200",
           "pressure": "1005"
+        },
+        {
+          "id": "af5f6e90-120b-11ec-ac13-ffdbd4a5d67b",
+          "code": "700",
+          "temperature": "12",
+          "windSpeed": "12",
+          "pressure": "12",
+          "windDirection": "12",
+          "date": "Fri Sep 10 2021 08:49:53 GMT+0100 (Irish Standard Time)"
         }
       ]
     },
@@ -65,15 +74,78 @@
           "pressure": "21",
           "windDirection": "21",
           "date": "Thu Sep 09 2021 20:56:18 GMT+0100 (Irish Standard Time)"
+        },
+        {
+          "id": "641a9b10-1258-11ec-9317-31ed7af06f81",
+          "code": "100",
+          "temperature": "2",
+          "windSpeed": "12",
+          "pressure": "1009",
+          "windDirection": "12",
+          "date": "Fri Sep 10 2021 17:58:58 GMT+0100 (Irish Standard Time)"
+        },
+        {
+          "id": "70f8d360-1258-11ec-9317-31ed7af06f81",
+          "code": "600",
+          "temperature": "2",
+          "windSpeed": "14",
+          "pressure": "1010",
+          "windDirection": "56",
+          "date": "Fri Sep 10 2021 17:59:20 GMT+0100 (Irish Standard Time)"
         }
       ]
     },
     {
-      "id": "98133810-11b2-11ec-99ab-49de9ee76e4a",
+      "id": "935efa60-1258-11ec-9317-31ed7af06f81",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Tramore",
+      "latitude": "59",
+      "longitude": "8",
+      "readings": [
+        {
+          "id": "a11fca80-1258-11ec-9317-31ed7af06f81",
+          "code": "300",
+          "temperature": "6",
+          "windSpeed": "89",
+          "pressure": "2006",
+          "windDirection": "34",
+          "date": "Fri Sep 10 2021 18:00:41 GMT+0100 (Irish Standard Time)"
+        }
+      ]
+    },
+    {
+      "id": "d354f640-125a-11ec-98c6-abb27a97fbed",
+      "userid": "bff14720-125a-11ec-98c6-abb27a97fbed",
+      "name": "Clonmel",
+      "latitude": "54",
+      "longitude": "98",
+      "readings": [
+        {
+          "id": "f5764c10-125a-11ec-98c6-abb27a97fbed",
+          "code": "100",
+          "temperature": "23",
+          "windSpeed": "211",
+          "pressure": "32",
+          "windDirection": "123",
+          "date": "Fri Sep 10 2021 18:17:21 GMT+0100 (Irish Standard Time)"
+        },
+        {
+          "id": "91d55050-125c-11ec-afef-159fb47e239e",
+          "code": "300",
+          "temperature": "4",
+          "windSpeed": "55",
+          "pressure": "89",
+          "windDirection": "67",
+          "date": "Fri Sep 10 2021 18:28:53 GMT+0100 (Irish Standard Time)"
+        }
+      ]
+    },
+    {
+      "id": "96f28490-125c-11ec-afef-159fb47e239e",
+      "userid": "bff14720-125a-11ec-98c6-abb27a97fbed",
       "name": "Ardmore",
-      "latitude": "12",
-      "longitude": "12",
+      "latitude": "213",
+      "longitude": "32",
       "readings": []
     }
   ]
