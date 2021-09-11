@@ -1,17 +1,22 @@
-Welcome to the Glitch Template
+Readme for WeatherTop2
 ==============================
 
-A starter project for learning Glitch.
-
-This is an Express.js project, designed to work well with the Glitch development environment. It includes basic express setup, templating, routing, JSON based model and session support.
-References
+References:
+How to read in Date
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-Add in refs for MathPow 
+{accessed on 2nd of September 2021}
 
+How to use mathpow
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow
+{accessed on 2nd of September 2021}
+
+How to use Mathmax
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max
-mathmax
+{accessed on 4th of September 2021}
 
+How to use images in JS
 https://www.youtube.com/watch?v=CUQAt1xfUWI
-images
+{accessed on 5th of September 2021}
 
-'https://api.openweathermap.org/data/2.5/onecall?lat=52.160858&lon=-7.152420&units=metric&appid=4945dcfc76e24ac10153c424a842c0d9'
+
+
